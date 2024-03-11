@@ -1,0 +1,232 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	{% include 'base/header.html.twig' %}
+
+	<!-- ======= Hero Section ======= -->
+	<div id="hero" class="hero route bg-image" style="background-image: url(/img/hero-bg.png)">
+		<div class="overlay-itro"></div>
+		<div class="hero-content display-table">
+			<div class="table-cell">
+				<div
+					class="container">
+					<!--<p class="display-6 color-d">Hello, world!</p>-->
+					<h1 class="hero-title mb-4">Pierre Renaudot</h1>
+					<p class="hero-subtitle">
+						<span class="typed" data-typed-items="Développeur, Etudiant, Passionné, Entrepreneur"></span>
+					</p>
+					<!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Hero Section -->
+
+	<main
+		id="main">
+		<!-- ======= About Section ======= -->
+		<section id="about" class="about-mf sect-pt4 route">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="box-shadow-full">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="row">
+										<div class="col-sm-6 col-md-5">
+											<div class="about-img">
+												<img src="/img/testimonial-2.jpg" class="img-fluid rounded b-shadow-a" alt="">
+											</div>
+										</div>
+										<div class="col-sm-6 col-md-7">
+											<div class="about-info">
+												<p>
+													<span class="title-s">Nom:</span>
+													<span>
+														<a href="linkedin.com/in/pierre-renaudot-b1a51325b">Pierre Renaudot</a>
+													</span>
+												</p>
+												<p>
+													<span class="title-s">Statut:
+													</span>
+													<span>Etudiant en programmation informatique</span>
+												</p>
+												<p>
+													<span class="title-s">Email:
+													</span>
+													<span>pierrerenaudot21@gmail.com</span>
+												</p>
+												<!-- <p><span class="title-s">Linkedin: </span> <span>(617) 557-0089</span></p> -->
+											</div>
+										</div>
+									</div>
+									<div class="skill-mf">
+										<p class="title-s">Skill</p>
+										<span>HTML</span>
+										<span class="pull-right">90%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<span>CSS3</span>
+										<span class="pull-right">75%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"></div>
+										</div>
+										<span>PHP</span>
+										<span class="pull-right">95%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<span>JAVASCRIPT</span>
+										<span class="pull-right">70%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="about-me pt-4 pt-md-0">
+										<div class="title-box-2">
+											<h5 class="title-left">
+												A propos
+											</h5>
+										</div>
+										<p class="lead">
+											Pour l'instant, etudiant plein d'ambitions, j'espère décrocher un diplome d'ingénieur Informatique à la fin de mon cursus scolaire.
+										</p>
+										<p class="lead">
+											Pour l'instant je finance ma vie d'étudiants grace à divers travaux saisonniers mais surtout en proposant mes services en tant que développeur web freelance.
+										</p>
+										<p class="lead">
+											N'hésitez pas à parcourir mon site afin d'en apprendre un peu plus sur moi, mes projets et mes compétences. Vous pourrez me contacter à la section
+											<a href="#contact">contact</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End About Section -->
+
+		<!-- ======= Services Section ======= -->
+		<section id="services" class="services-mf pt-5 route">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="title-box text-center">
+							<h3 class="title-a">
+								Compétences
+							</h3>
+							<p
+								class="subtitle-a"><!-- SOUS-TRITRE -->
+							</p>
+							<div class="line-mf"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="service-box">
+							<div class="service-ico">
+								<span class="ico-circle">
+									<i class="bi bi-briefcase"></i>
+								</span>
+							</div>
+							<div class="service-content">
+								<h2 class="s-title">Developpement web</h2>
+								<p class="s-description text-center">
+									Développer des sites de A à Z, en PHP natif mais aussi grace à certains frameworks comme symfony ou CodeIgniter
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="service-box">
+							<div class="service-ico">
+								<span class="ico-circle">
+									<i class="bi bi-card-checklist"></i>
+								</span>
+							</div>
+							<div class="service-content">
+								<h2 class="s-title">Base de donnée</h2>
+								<p class="s-description text-center">
+									Modéliser et créer une base de donnée sous mysql ou progresSql en tenant compte du projet et des enjeux de sécurité de celui ci.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="service-box">
+							<div class="service-ico">
+								<span class="ico-circle">
+									<i class="bi bi-bar-chart"></i>
+								</span>
+							</div>
+							<div class="service-content">
+								<h2 class="s-title">Cyber-Sécurité</h2>
+								<p class="s-description text-center">
+									Etudier les enjeux de sécurité d'un projet et tenir compte de ceux-ci durant le développement en gardant un code propre et une utilisation optimal de l'application
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="service-box">
+							<div class="service-ico">
+								<span class="ico-circle">
+									<i class="bi bi-binoculars"></i>
+								</span>
+							</div>
+							<div class="service-content">
+								<h2 class="s-title">Front-end</h2>
+								<p class="s-description text-center">
+									Développer un design optimal dans l'utilisation de l'application pour faciliter la vie de l'utilisateur. Que celui-ci soit sur ordinateur ou téléphone.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="service-box">
+							<div class="service-ico">
+								<span class="ico-circle">
+									<i class="bi bi-brightness-high"></i>
+								</span>
+							</div>
+							<div class="service-content">
+								<h2 class="s-title">Travail de groupe</h2>
+								<p class="s-description text-center">
+									Faciliter le travail de groupe grace à des solutions comme git mais encore en développant un plan d'action au départ du projet notament avec un diagramme de GANTT par exemple.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="service-box">
+							<div class="service-ico">
+								<span class="ico-circle">
+									<i class="bi bi-calendar4-week"></i>
+								</span>
+							</div>
+							<div class="service-content">
+								<h2 class="s-title">Marketing et SEO</h2>
+								<p class="s-description text-center">
+									Proposer des sites web optimisé et intéressant pour les clients grace à un bon design mais aussi avec un référencement SEO optimal.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Services Section -->
+
+		{# templates/your_template.html.twig #}
+		{{ render(controller('App\\Controller\\HomePageController::section_portfolio')) }}
+		{# {{ render(controller('App\\Controller\\HomePageController::section_veille')) }} #}
+		{{ render(controller('App\\Controller\\HomePageController::section_contact')) }}
+
+	</main>
+{% endblock %}

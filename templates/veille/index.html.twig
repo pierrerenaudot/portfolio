@@ -1,0 +1,111 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello VeilleController!
+{% endblock %}
+
+{% block body %}
+	<style>
+		/* Ajoutez ici votre propre style si nécessaire */
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.form-group {
+			margin-bottom: 20px;
+		}
+		.slide-form {
+			position: fixed;
+			top: 0;
+			right: 0;
+			height: 100%;
+			width: 50%;
+			background-color: #f8f9fa;
+			padding: 20px;
+			overflow-x: hidden;
+			transition: transform 0.5s ease-out;
+			transform: translateX(100%);
+		}
+		.show-form {
+			transform: translateX(0%);
+		}
+		.mini-header {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 20px;
+			font-size: 20px;
+		}
+	</style>
+	{# PAGE  #}
+	<div class="container">
+		<h2 class="text-center">Formulaire de Veille</h2>
+		<button id="showFormBtn" class="btn btn-primary">Nouveau</button>
+		{{ render(controller('App\\Controller\\HomePageController::section_veille')) }}
+
+	</div>
+
+	{# FORMULAIRE  #}
+	<div id="slideForm" class="slide-form">
+		<div class="container">
+			<div class="mini-header">
+				<div>
+					<span id="hideFormBtn" class="text-primary" style="cursor: pointer;">
+						<i class="bi bi-x-lg"></i>
+					</span>
+
+				</div>
+				<div>
+					<!-- Ajoutez d'autres boutons ici -->
+					<span class="text-danger" style="cursor: pointer;">
+						<i class="bi bi-trash"></i>
+					</span>
+					<span class="text-info" style="cursor: pointer;">
+						<i class="bi bi-arrow-counterclockwise"></i>
+					</span>
+
+				</div>
+			</div>
+			<h2 class="text-center">Nouvel Enregistrement</h2>
+			<form>
+				<div class="form-group">
+					<label for="nom">Nom:</label>
+					<input type="text" class="form-control" id="nom" placeholder="Entrez le nom">
+				</div>
+				<div class="form-group">
+					<label for="url">URL:</label>
+					<input type="url" class="form-control" id="url" placeholder="Entrez l'URL">
+				</div>
+				<div class="form-group">
+					<label for="tag">Tag:</label>
+					<input type="text" class="form-control" id="tag" placeholder="Entrez le tag">
+				</div>
+				<div class="form-group">
+					<label for="date-ajout">Date d'Ajout:</label>
+					<input type="date" class="form-control" id="date-ajout">
+				</div>
+				<div class="form-group">
+					<label for="date-maj">Date de Mise à Jour:</label>
+					<input type="date" class="form-control" id="date-maj">
+				</div>
+				<div class="form-group">
+					<label for="commentaire">Commentaire:</label>
+					<textarea class="form-control" id="commentaire" rows="3" placeholder="Ajoutez un commentaire"></textarea>
+				</div>
+				<div class="form-group text-center">
+					<button type="submit" class="btn btn-primary">Enregistrer</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+	 <script>
+						    document.getElementById("showFormBtn").addEventListener("click", function() {
+						      document.getElementById("slideForm").classList.toggle("show-form");
+						    });
+						
+						    document.getElementById("hideFormBtn").addEventListener("click", function() {
+						      document.getElementById("slideForm").classList.remove("show-form");
+						    });
+						  </script>
+
+
+{% endblock %}

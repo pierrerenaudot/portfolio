@@ -1,0 +1,82 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProjectController!
+{% endblock %}
+
+{% block body %}
+	<div class="hero hero-single route bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+		<div class="overlay-mf"></div>
+		<div class="hero-content display-table">
+			<div class="table-cell">
+				<div class="container">
+					<h2 class="hero-title mb-4">{{project.title}}</h2>
+					<ol class="breadcrumb d-flex justify-content-center">
+						<li class="breadcrumb-item">
+							<a href="/">Home</a>
+						</li>
+						<li class="breadcrumb-item active">{{project.title}}</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<main
+		id="main">
+
+		<!-- ======= Portfolio Details Section ======= -->
+		<section id="portfolio-details" class="portfolio-details">
+			<div class="container">
+
+				<div class="row gy-4">
+
+					<div class="col-lg-8">
+						<div class="portfolio-details-slider swiper">
+							<div class="swiper-wrapper align-items-center">
+
+								{% for img in listImg %}
+								<div class="swiper-slide">
+									<img src="{{img}}" alt="">
+								</div>
+								{% endfor %}
+
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="portfolio-info">
+							<h3>Informations:</h3>
+							<ul>
+								<li>
+									<strong>Categorie</strong>:
+									{{project.category}}</li>
+								<li>
+									<strong>Date</strong>:
+									{{project.date}}</li>
+								<li>
+									<strong>Project URL</strong>:
+									<a href="https://{{project.url}}">{{project.url}}</a>
+								</li>
+							</ul>
+						</div>
+						<div class="portfolio-description">
+							<h2>Détails du projet</h2>
+							<p>
+								{{project.description}}
+							</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+		<!-- End Portfolio Details Section -->
+
+	</main>
+	<!-- End #main -->
+
+
+{% endblock %}

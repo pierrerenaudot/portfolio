@@ -1,0 +1,102 @@
+<!-- ======= Portfolio Section ======= -->
+<section id="work" class="portfolio-mf sect-pt4 route">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="title-box text-center">
+					<h3 class="title-a">
+						Portfolio
+					</h3>
+					<p class="subtitle-a">
+						Découvrez mes projets professionnels les plus récents.
+					</p>
+					<div class="line-mf"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			{% for project in data %}
+				<div class="col-md-4">
+					<div class="work-box">
+						<a href="/project?id={{project.id}}" class="portfolio-lightbox">
+							<div class="work-img">
+								<img src="/img/{{project.mignatureUrl}}" alt="" class="img-fluid">
+							</div>
+						</a>
+						<div class="work-content">
+							<div class="row">
+								<div class="col-sm-8">
+									<h2 class="w-title">{{project.title}}</h2>
+									<div class="w-more">
+										<span class="w-ctegory">{{project.category}}</span>
+										/
+										<span class="w-date">{{project.date}}</span>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="w-like">
+										<a
+											href="/project?id={{project.id}}">
+											<!-- change -->
+											<span class="bi bi-plus-circle"></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+	<!-- ======= Second school part ======= -->
+
+	<div class="container mt-2">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="title-box text-center">
+					<p class="subtitle-a">
+						Découvrez mes projets scolaires
+					</p>
+					<div class="line-mf"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			{% for project in data %}
+
+				<div class="col-md-4">
+					<div class="work-box">
+						<a href="/project?id={{project.id}}" class="portfolio-lightbox">
+							<div class="work-img">
+								<img src="/img/{{project.mignatureUrl}}" alt="" class="img-fluid">
+							</div>
+						</a>
+						<div class="work-content">
+							<div class="row">
+								<div class="col-sm-8">
+									<h2 class="w-title">{{project.title}}</h2>
+									<div class="w-more">
+										<span class="w-ctegory">{{project.category}}</span>
+										/
+										<span class="w-date">{{project.date}}</span>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="w-like">
+										<a
+											href="/project?id={{project.id}}">
+											<!-- change -->
+											<span class="bi bi-plus-circle"></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<!-- End Portfolio Section -->

@@ -1,3 +1,20 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+  path: /
+  controller: App\Controller\HomePageController::index
+
+project:
+  path: /project
+  controller: App\Controller\ProjectController::index
+
+veille:
+  path: /veille
+  controller: App\Controller\VeilleController::index
+
+pageConnexion:
+  path: /veille/connexion
+  controller: App\Controller\VeilleController::pageConnexion
+
+connexion:
+  path: /veille/pageConnexion
+  controller: App\Controller\VeilleController::connexion
+  methods: [POST]
