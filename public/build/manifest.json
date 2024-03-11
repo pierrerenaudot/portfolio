@@ -1,0 +1,15 @@
+{
+  "build/app.css": "/build/app.css",
+  "build/app.js": "/build/app.js",
+  "build/styles.css": "/build/styles.css",
+  "build/styles.js": "/build/styles.js",
+  "build/bootstrap.css": "/build/bootstrap.css",
+  "build/bootstrap.js": "/build/bootstrap.js",
+  "build/scripts.js": "/build/scripts.js",
+  "build/runtime.js": "/build/runtime.js",
+  "build/vendors-node_modules_core-js_modules_es_date_to-primitive_js-node_modules_core-js_modules_es_-19cd67.js": "/build/vendors-node_modules_core-js_modules_es_date_to-primitive_js-node_modules_core-js_modules_es_-19cd67.js",
+  "build/vendors-node_modules_glightbox_dist_js_glightbox_min_js-node_modules_core-js_modules_es_array-b9abc8.js": "/build/vendors-node_modules_glightbox_dist_js_glightbox_min_js-node_modules_core-js_modules_es_array-b9abc8.js",
+  "build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js.js": "/build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js.js",
+  "build/fonts/bootstrap-icons.woff?": "/build/fonts/bootstrap-icons.39795c0b.woff",
+  "build/fonts/bootstrap-icons.woff2?": "/build/fonts/bootstrap-icons.b7bcc075.woff2"
+}

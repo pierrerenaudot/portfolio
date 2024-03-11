@@ -1,0 +1,41 @@
+{
+  "entrypoints": {
+    "app": {
+      "js": [
+        "/build/runtime.js",
+        "/build/vendors-node_modules_core-js_modules_es_date_to-primitive_js-node_modules_core-js_modules_es_-19cd67.js",
+        "/build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js.js",
+        "/build/app.js"
+      ],
+      "css": [
+        "/build/app.css"
+      ]
+    },
+    "styles": {
+      "js": [
+        "/build/runtime.js",
+        "/build/styles.js"
+      ],
+      "css": [
+        "/build/styles.css"
+      ]
+    },
+    "bootstrap": {
+      "js": [
+        "/build/runtime.js",
+        "/build/bootstrap.js"
+      ],
+      "css": [
+        "/build/bootstrap.css"
+      ]
+    },
+    "scripts": {
+      "js": [
+        "/build/runtime.js",
+        "/build/vendors-node_modules_core-js_modules_es_date_to-primitive_js-node_modules_core-js_modules_es_-19cd67.js",
+        "/build/vendors-node_modules_glightbox_dist_js_glightbox_min_js-node_modules_core-js_modules_es_array-b9abc8.js",
+        "/build/scripts.js"
+      ]
+    }
+  }
+}
